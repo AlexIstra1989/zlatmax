@@ -1,16 +1,119 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+ <div class="wrapper">
+  @@include('html/_header.htm',{})
+  <main class="page page_home">
+   <section class="page__main-block main-block">
+    <div class="main-block__container">
+     <div class="main-block__body">
+      <div class="main-block__slider swiper">
+       <div class="main-block__swiper swiper-wrapper">
+        <div class="main-block__slide slide swiper-slide swiper-slide">
+         <div class="slide__content">
+          <h2 data-swiper-parallax="-100" class="slide__title">Интернет магазин сертифицированных </h2>
+          <h3 data-swiper-parallax="-150" class="slide__subtitle">златоустовских ножей</h3>
+          <p data-swiper-parallax="-200" class="slide__text">
+           Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине
+           представлен наиболее широкий выбор Златоустовских ножей от Златоустовских
+           Оружейных Фабрик и компаний, мы являемся официальными поставщиками.
+          </p>
+         </div>
+         <a class="slide__button button" href="#">Подробнее</a>
+        </div>
+        <div class="main-block__slide slide swiper-slide">
+         <div class="slide__content">
+          <h2 data-swiper-parallax="-300" class="slide__title">Интернет магазин сертифицированных </h2>
+          <h3 data-swiper-parallax="-350" class="slide__subtitle">златоустовских ножей</h3>
+          <p data-swiper-parallax="-400" class="slide__text">
+           Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине
+           представлен наиболее широкий выбор Златоустовских ножей от Златоустовских
+           Оружейных Фабрик и компаний, мы являемся официальными поставщиками.
+          </p>
+         </div>
+         <a class="slide__button button" href="#">Подробнее</a>
+        </div>
+        <div class="main-block__slide slide swiper-slide">
+         <div class="slide__content">
+          <h2 data-swiper-parallax="-500" class="slide__title">Интернет магазин сертифицированных </h2>
+          <h3 data-swiper-parallax="-550" class="slide__subtitle">златоустовских ножей</h3>
+          <p data-swiper-parallax="-600" class="slide__text">
+           Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине
+           представлен наиболее широкий выбор Златоустовских ножей от Златоустовских
+           Оружейных Фабрик и компаний, мы являемся официальными поставщиками.
+          </p>
+         </div>
+         <a class="slide__button button" href="#">Подробнее</a>
+        </div>
+       </div>
+       <div class="main-block__controll controll">
+        <div class="controll__dotts"></div>
+        <div class="controll__fraction fraction">
+         <span class="fraction__current">0</span> / <span class="fraction__all">0</span>
+        </div>
+       </div>
+      </div>
+      <div class="slide__media media">
+       <div class="media__image">
+        <img src="img/main-block/slide-image.png" alt="#">
+       </div>
+       <div class="media__tips">
+        <button class="media__tip media__tip_1" type="button" data-tippy-content="Подсказка"><span>+</span></button>
+        <button class="media__tip media__tip_2" type="button" data-tippy-content="Подсказка"><span>+</span></button>
+        <button class="media__tip media__tip_3" type="button" data-tippy-content="Подсказка"><span>+</span></button>
+       </div>
+      </div>
+     </div>
+
+     <div class="main-block__advantages advantages">
+      <div class="advantages__item">
+       <div class="advantages__icon">
+        <img src="img/icons/garant.svg" alt="">
+       </div>
+       <p class="advantages__text">
+        Гарантия 100% возврата
+        денежных средств
+       </p>
+      </div>
+      <div class="advantages__item">
+       <div class="advantages__icon">
+        <img src="img/icons/delivery.svg" alt="">
+       </div>
+       <p class="advantages__text">
+        Доставка по России,
+        Казахстану и Белоруссии
+       </p>
+      </div>
+      <div class="advantages__item">
+       <div class="advantages__icon">
+        <img src="img/icons/registr.svg" alt="">
+       </div>
+       <p class="advantages__text">
+        Возможность оформление
+        заказа без регистрации
+       </p>
+      </div>
+      <div class="advantages__item">
+       <div class="advantages__icon">
+        <img src="img/icons/sale.svg" alt="">
+       </div>
+       <p class="advantages__text">
+        Скидки постоянным
+        покупателям
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  @@include('html/_footer.htm',{})
+ </div>
+ @@include('html/_popup.htm',{})
+ @@include('html/_js.htm',{})
+</body>
+
 </html>

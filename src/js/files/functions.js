@@ -414,8 +414,14 @@ export function menuInit() {
 	if (document.querySelector(".icon-menu")) {
 		document.addEventListener("click", function (e) {
 			if (bodyLockStatus && e.target.closest('.icon-menu')) {
-				bodyLockToggle();
+				bodyLockToggle(); 
 				document.documentElement.classList.toggle("menu-open");
+    if (document.documentElement.classList.contains('catalog-open')) {
+     document.documentElement.classList.remove('catalog-open');
+    }
+    if (document.documentElement.classList.contains('sub-menu-open')) {
+     document.documentElement.classList.remove('sub-menu-open');
+    }
 			}
 		});
 	};

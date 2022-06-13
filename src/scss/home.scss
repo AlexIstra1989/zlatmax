@@ -1,3 +1,248 @@
-//====================================================================================================
+.page {
+ // .page__main-block
+ &__main-block {
+ }
+}
 
-//====================================================================================================
+.main-block {
+ @include background(url("../img/main-block/main-bg.jpg"));
+ color: $primaryColor;
+ @include adaptiveValue("padding-top", 40,20);
+ @include adaptiveValue("padding-bottom", 60,20); 
+ // .main-block__container
+ &__container {
+ }
+ // .main-block__body
+ &__body {
+  display: grid;
+  grid-template-columns: 1fr percent(635, 1600);
+  align-items: start;
+ }
+ // .main-block__slider
+ &__slider {
+  margin: 0 rem(-30);
+  padding: 0 rem(30);
+ }
+ // .main-block__swiper
+ &__swiper {
+  margin-bottom: rem(30);
+ }
+ // .main-block__slide
+ &__slide {
+ }
+ // .main-block__advantages
+ &__advantages {
+ }
+}
+
+.slide {
+ // .slide__content
+ &__content {
+  padding-right: rem(40);
+  max-width: rem(915);
+  width: 100%;
+ }
+ // .slide__title
+ &__title {
+  font-size: rem(36);
+  line-height: math.div(46, 36);
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+   margin-bottom: rem(15);
+ }
+ // .slide__subtitle
+ &__subtitle {
+  font-size: rem(36);
+  line-height: math.div(46, 36);
+  letter-spacing: 0.03rem; 
+  margin-bottom: rem(30);
+ }
+ // .slide__text
+ &__text {
+  font-size: rem(20);
+  line-height: math.div(30, 20);
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: rem(60);
+ }
+ // .slide__btn
+ &__btn {
+ }
+ // .slide__media
+ &__media {
+ }
+}
+
+.controll {
+ display: inline-grid;
+ grid-auto-flow: column;
+ align-items: center;
+ gap: rem(20);
+ // .controll__dotts
+ &__dotts {
+  display: inline-grid;
+  grid-auto-flow: column;
+  gap: rem(15);
+  cursor: pointer;
+  margin-right: rem(25);
+  .swiper-pagination-bullet {
+   height: rem(40);
+   width: rem(18);
+   transition: all 0.3 ease 0s;
+   cursor: pointer;
+   position: relative;
+   &::after {
+    @include pseudo;
+    height: rem(2);
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $primaryColor;
+   }
+   &::before {
+    @include pseudo;
+    background-color: $accentColor;
+    width: rem(10);
+    height: rem(10);
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: left 0.3s linear 0s;
+   }
+  }
+  .swiper-pagination-bullet-active {
+   width: rem(30);
+   &::after {
+    background-color: $accentColor;
+   }
+   &::before {
+    opacity: 1;
+    left: rem(20);
+    transition: left 3s linear 0s;
+   }
+  }
+ }
+ // .controll__fraction
+ &__fraction {
+ }
+}
+.fraction {
+ display: flex;
+ align-items: flex-end;
+ font-weight: 600;
+ letter-spacing: 0.3em;
+ // .fraction__current
+ &__current {
+  color: $accentColor;
+  font-size: rem(24);
+ }
+ // .fraction__all
+ &__all {
+  font-size: rem(18);
+ }
+}
+
+
+.media {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: rem(15);
+ position: relative;
+ // .media__image
+ &__image {
+  width: rem(450);
+  height: rem(500);
+  position: relative;
+  &::before {
+   @include pseudo;
+   width: 423px;
+   height: 423px;
+   border: 2px solid rgba(255, 255, 255, 0.5);
+   border-radius: 50%;
+   bottom: 0;
+   right: 0;
+   transform: translate(percent(131, 423), 0px);
+  }
+  img {
+   position: relative;
+   z-index: 99;
+  }
+ }
+ // .media__tips
+ &__tips {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 555;
+ }
+ // .media__tip
+ &__tip {
+  position: absolute;
+  width: rem(20);
+  height: rem(20);
+  cursor: pointer;
+  transition: transform 0.5s;
+  &:hover {
+   transform: rotate(-180deg);
+  }
+  &::before, 
+  &::after {
+   @include pseudo;
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   background-color: $accentColor;
+   top: 0;
+   left: 0;
+  }
+  &::after {
+   opacity: 0.5;
+   transform: scale(1.6);
+  }
+  span {
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   z-index: 3;
+   font-weight: 600;
+   font-size: rem(20);
+  }
+  // .media__tip_1
+  &_1 {
+   top: percent(186, 500);
+   left: percent(72, 447);
+  }
+  // .media__tip_2
+  &_2 {
+   top: percent(117, 500);
+   right: percent(13, 447);
+  }
+  // .media__tip_3
+  &_3 {
+   bottom: percent(115, 500);
+   right: percent(28, 447);
+  }
+ }
+}
+
+.advantages {
+ display: flex;
+ // .advantages__item
+ &__item {
+ }
+ // .advantages__icon
+ &__icon {
+ }
+ // .advantages__text
+ &__text {
+ }
+}

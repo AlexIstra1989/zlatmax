@@ -28,6 +28,7 @@
   justify-content: space-between;
   font-weight: 600;
   position: relative;
+  z-index: 66;
   &:hover {
    text-decoration: underline;
   }
@@ -58,18 +59,22 @@
    text-decoration: underline;
   }
   &_catalog {
+   display: block;
    position: relative;
    &::after {
     @include pseudo;
     @include background(url("../img/icons/arrow-right.svg"));
-    width: 14px;
-    height: 14px;
-    right: -20px;
+    width: 20px;
+    height: 22px;
+    right: 0;
     top: 5px;
    }
    @media (min-width: $tablet) {
     display: none;
    }
+  }
+  @media (max-width: $tablet) {
+   font-size: rem(26);
   }
  }
 }
@@ -89,8 +94,25 @@
    left: -110%;
    overflow: auto;
    background-color: $mainDarkColor;
-   padding: rem(80) rem(15) rem(50) rem(15) ;
+   padding: rem(100) rem(15) rem(50) rem(15) ;
    z-index: 54;
+   transition: left 0.5s;
+   &::before {
+    @include pseudo;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    left: -100%;
+    top: 0;
+    background-color: $mainDarkColor;
+   }
+   .menu-open & {
+    left: 0;
+    &::before {
+     left: 0;
+     z-index: 67;
+    }
+   }
   }
  }
  &__btn {
@@ -101,7 +123,7 @@
    width: 30px;
    height: rem(18);
    cursor: pointer;
-   z-index: 55;
+   z-index: 999;
    span,
    &::before,
    &::after {
@@ -145,12 +167,18 @@
 .body-header {
  padding: 10px 0;
  background-color: #ECF1F2;
+ @media (max-width: $mobileSmall) {
+  padding: 0;
+ }
  &__container {
   display: flex;
   align-items: center;
   min-height: 90px;
   @media (max-width: $tablet) {
    justify-content: space-between;
+  }
+  @media (max-width: $mobileSmall) {
+   justify-content: center;
   }
  }
  &__logo {
@@ -162,6 +190,9 @@
   @media (min-width: $tablet) {
    padding-right: rem(20);
   }
+  @media (max-width: $mobileSmall) {
+   padding-left: 0;
+  }
 	}
 }
 //======================================================================================================================================
@@ -169,6 +200,9 @@
  position: relative; 
  @media (min-width: $tablet) {
   max-width: rem(377);
+ }
+ @media (max-width: $tablet) {
+  background-color: $primaryColor;
  }
 	&__btn {
   @include pseudo;
@@ -227,6 +261,7 @@
   align-items: center;
   width: 40px;
   height: 40px;
+  z-index: 66;
   @media (max-width: $tablet) {
    svg {
     path {
@@ -241,6 +276,7 @@
  // .phones-header__item
  &__item {
   position: relative;
+  z-index: 66;
   margin-bottom: rem(3);
   @media (max-width:$mobileSmall) {
    margin-bottom: 0;
@@ -258,18 +294,6 @@
   color: $mainDarkColor;
   line-height: math.div(22, 18);
   position: relative;
-  // &::before {
-  //  @include pseudo;
-  //  @include background(url("../img/icons/phone.svg"));
-  //  width: 23px;
-  //  height: 24px;
-  //  left: 0;
-  //  top: 0;
-  //  display: none;
-  //  @media (max-width:$mobileSmall) {
-  //   display: block;
-  //  }
-  // }
   @media (max-width: $tablet) {
    font-size: rem(22);
    color: $primaryColor;
@@ -344,6 +368,7 @@
   width: 35px;
   height: 35px;
   margin-right: rem(22);
+  z-index: 66;
   @media (max-width: $tablet) {
    margin-right: 0;
    svg {
@@ -393,13 +418,33 @@
  // .catalog-header__menu
  &__menu {
  }
+ @media (max-width: $mobileSmall) {
+  padding: rem(20) 0;
+ }
 }
 .menu-catalog {
+ @media (max-width: $tablet) {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: $mainDarkColor;
+  padding: rem(25) rem(15) rem(50) rem(15);
+  .catalog-open & {
+   left: 0;
+   z-index: 770;
+  }   
+ }
  // .menu-catalog__list
  &__list {
   display: flex;
   gap: 10px;
   justify-content: space-between;
+  @media (max-width: $tablet) {
+   flex-direction: column;
+  }
  }
  // .menu-catalog__item
  &__item {
@@ -431,6 +476,30 @@
     visibility: visible;
    }
   }
+  @media (max-width: $tablet) {
+   font-size: rem(26);
+  }
+ }
+ &__back {
+  display: none;
+  position: relative;
+  &::before {
+   @include pseudo;
+   @include background(url("../img/icons/arrow-left-white.svg"));
+   width: 20px;
+   height: 20px;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+  }
+  @media (max-width: $tablet) {
+   display: block;
+   padding-left: rem(30);
+   font-size: rem(26);
+   &:not(:last-child) {
+    margin-bottom: rem(60);
+   }
+  }
  }
  &._sub-menu-active {
   color: $accentColor;
@@ -441,6 +510,21 @@
  }
 }
 .sub-menu {
+ @media (max-width: $tablet) {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: $mainDarkColor;
+  padding: rem(25) rem(15) rem(50) rem(15);
+  .sub-menu-open & {
+   left: 0;
+   z-index: 990;
+   display: block;
+  }   
+ }
  //position: absolute;
  width: 100%;
  left: 0;
@@ -460,6 +544,9 @@
   }
   &._sub-menu-open {
    display: grid;
+   @media (max-width: $tablet) {
+    display: block;
+   }
   }
  }
  // .sub-menu__link
@@ -472,6 +559,10 @@
   &:hover {
    text-decoration: underline;
   }
+  @media (max-width: $tablet) {
+   display: block;
+   font-size: rem(24);
+  }
  }
  // .sub-menu__list
  &__list {
@@ -481,6 +572,9 @@
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding: rem(30) rem(15);
+  @media (max-width: $tablet) {
+   display: none;
+  }
  }
  // .sub-menu__item
  &__item {
@@ -503,6 +597,28 @@
   color: $accentColor;
   &:hover {
    text-decoration: underline;
+  }
+  @media (max-width: $tablet) {
+   display: none;
+  }
+ }
+ &__back {
+  display: none;
+  padding-left: rem(30);
+  font-size: rem(26);
+  position: relative;
+  &::before {
+   @include pseudo;
+   @include background(url("../img/icons/arrow-left-white.svg"));
+   width: 20px;
+   height: 20px;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+  }
+  @media (max-width: $tablet) {
+   display: inline-flex;
+  
   }
  }
 }
