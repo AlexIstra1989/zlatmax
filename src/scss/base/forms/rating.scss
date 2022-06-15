@@ -2,10 +2,14 @@
 // Снипет (HTML): rating
 .rating {
 	display: flex;
-	align-items: flex-end;
-	font-size: 40px;
+	align-items: center;
+ justify-content: space-between;
+	font-size: 30px;
 	line-height: 0.75;
 	transition: opacity 0.3s ease 0s;
+ padding-bottom: rem(25);
+ margin-bottom: rem(20);
+ border-bottom: 1px solid rgba(20, 20, 20, 0.5);
 }
 .rating.rating_sending {
 	opacity: 0.2;
@@ -17,6 +21,7 @@
 
 .rating__body {
 	position: relative;
+ letter-spacing: em(10, 30);
 }
 .rating__body::before {
 	content: "★★★★★";
@@ -54,7 +59,13 @@
 	opacity: 0;
 }
 .rating__value {
-	font-size: 50%;
-	line-height: 1;
-	padding: 0px 0px 0px 10px;
+	// font-size: 50%;
+	// line-height: 1;
+	// padding: 0px 0px 0px 10px;
+ display: none;
+}
+.rating__info {
+ font-size: rem(16);
+ line-height: math.div(34, 16);
+ color: #ABABAB;
 }

@@ -1,0 +1,214 @@
+.products-slider {
+ // .products-slider__container
+ &__container {
+ }
+ // .products-slider__header
+ &__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include adaptiveValue("margin-bottom", 50, 30);
+  @media (max-width: $tablet) {
+   justify-content: center;
+  }
+ }
+ // .products-slider__title
+ &__title {
+  font-weight: 700;
+  font-size: rem(30);
+  line-height: math.div(46,30);
+  letter-spacing: 0.05em;
+ }
+ // .products-slider__more
+ &__more {
+  font-weight: 600;
+  line-height: math.div(46,18);
+  letter-spacing: 0.05em;
+  color: rgba(20, 20, 20, 0.58);
+  position: relative;
+  display: inline-block;
+  padding-right: rem(20);
+  transition: color 0.5s;
+  &::after {
+   @include pseudo;
+   @include background(url("../img/icons/arrow-down.svg"));
+   width: rem(12);
+   height: rem(17);
+   right: rem(0);
+   top: rem(15);
+   transform: rotate(-90deg);
+  }
+  &:hover {
+   color: rgba(20, 20, 20, 1);
+  }
+ }
+ // .products-slider__slider
+ &__slider {
+  padding: rem(15) rem(20);
+  margin: 0 rem(-20);
+ }
+ // .products-slider__swiper
+ &__swiper {
+  @include adaptiveValue("margin-bottom", 60, 30);
+ }
+ // .products-slider__slide
+ &__slide {
+ }
+ &__dotts {
+  display: grid;
+  justify-content: center;
+  grid-auto-flow: column;
+  cursor: pointer;
+  margin: 0 auto;
+  overflow: hidden;
+  .swiper-pagination-bullet {
+   height: rem(40);
+   width: rem(18);
+   transition: all 0.3 ease 0s;
+   cursor: pointer;
+   position: relative;
+   margin: 0 rem(7.5) 0 0;
+   &::after {
+    @include pseudo;
+    height: rem(2);
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #898989;
+   }
+   &::before {
+    @include pseudo;
+    background-color: $accentColor;
+    width: rem(10);
+    height: rem(10);
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: left 0.3s linear 0s;
+   }
+  }
+  .swiper-pagination-bullet-active {
+   &::after {
+    background-color: $accentColor;
+   }
+   &::before {
+    opacity: 1;
+    left: rem(8);
+    transition: left 3s linear 0s;
+   }
+  }
+ }
+ &__more-mobile {
+  @media (max-width: $tablet) {
+   text-align: center;
+  }
+ }
+}
+.product-card {
+ display: grid;
+ height: 100%;
+ grid-template-rows: auto 1fr;
+ box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+ transition: box-shadow 0.5s;
+ &:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+ }
+ // .product-card__image
+ &__image {
+  padding: rem(20) rem(50) rem(30);
+  text-align: center;
+  @media (max-width: $mobileSmall) {
+   padding: rem(10);
+  }
+ }
+ // .product-card__body
+ &__body {
+  padding: rem(20);
+ }
+ @media (max-width: $mobileSmall) {
+  padding: rem(10);
+ }
+ // .product-card__title
+ &__title {
+
+ }
+ // .product-card__title-link
+ &__title-link {
+  font-weight: 600;
+  font-size: rem(20);
+  line-height: math.div(34, 20);
+ }
+ // .product-card__info
+ &__info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: rem(16);
+  line-height: math.div(34, 16);
+  color: #ABABAB;
+  margin-bottom: rem(10);
+ }
+ // .product-card__info-size
+ &__info-size {
+ }
+ // .product-card__rating
+ &__rating {
+ }
+ // .product-card__footer
+ &__footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(26);
+ }
+ // .product-card__price
+ &__price {
+  display: inline-block;
+  font-weight: 600;
+  font-size: rem(20);
+  line-height: math.div(34, 20);
+  margin-right: auto;
+ }
+ // .product-card__compare
+ &__compare {
+  position: relative;
+  width: rem(26);
+  height: rem(26);
+  margin-right: rem(15);
+  &:hover {
+   svg {
+    path {
+     fill: $accentColor;
+    }
+   }
+  }
+ }
+ // .product-card__favorite
+ &__favorite {
+  margin-top: rem(4);
+  &:hover {
+   svg {
+    path {
+     fill: $accentColor;
+    }
+   }
+  }
+ }
+ // .product-card__button
+ &__button {
+  width: 100%;
+  position: relative; 
+  text-align: left;
+  padding-left: rem(90);
+  &::after {
+   @include pseudo;
+   @include background(url("../img/icons/cart-btn.svg"));
+   width: rem(20);
+   height: rem(18);
+   top: 50%;
+   right: 30%;
+   transform: translateY(-50%);
+  }
+ }
+}

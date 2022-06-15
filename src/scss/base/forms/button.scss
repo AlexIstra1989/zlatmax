@@ -2,7 +2,7 @@
 // Снипет (HTML): btn
 
 .button {
-	display: inline-flex;
+	display: inline-block;
 	padding: 0px 0px;
  font-weight: 600;
  font-size: rem(20);
@@ -10,6 +10,7 @@
  padding: rem(8) rem(52);
  background-color: $accentColor;
  color: $primaryColor;
+ text-align: center;
  box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
  border-radius: 3px;
  cursor: pointer;
