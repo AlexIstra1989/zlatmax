@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   @include adaptiveValue("margin-bottom", 50, 30);
-  @media (max-width: $tablet) {
+  @media (max-width: $mobile) {
    justify-content: center;
   }
  }
@@ -112,6 +112,7 @@
  grid-template-rows: auto 1fr;
  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
  transition: box-shadow 0.5s;
+ background-color: $primaryColor;
  &:hover {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
  }
