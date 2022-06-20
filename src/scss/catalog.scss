@@ -1,0 +1,32 @@
+.catalog {
+ // .catalog__container
+ &__container {
+ }
+ // .catalog__body
+ &__body {
+  display: grid;
+  grid-template-columns: rem(375) 1fr;
+  gap: rem(30);
+ }
+ // .catalog__filter
+ &__filter {
+ }
+ // .catalog__content
+ &__content {
+ }
+ // .catalog__control
+ &__control {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: rem(20);
+ }
+ // .catalog__products
+ &__products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(rem(290), rem(350)));
+  gap: rem(15);
+ }
+}
+
+
+

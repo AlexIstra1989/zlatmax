@@ -1,1 +1,58 @@
-// Заголовки, общие БЄМ блоки и проче...
+.breadcrumbs {
+ // .breadcrumbs__list
+ &__list {
+  display: flex;
+  //margin-bottom: rem(30);
+ }
+ // .breadcrumbs__item
+ &__item {
+ }
+ // .breadcrumbs__link
+ &__link {
+  font-size: rem(16);
+  line-height: math.div(20, 16);
+  opacity: 0.5;
+  margin-right: rem(40);
+  position: relative;
+  &::after {
+   @include pseudo;
+   @include background (url("../img/icons/breadcrumbs-arrow.svg"));
+   width: rem(7);
+   height: rem(11);
+   right: rem(-20);
+   top: 50%;
+   transform: translateY(-50%);
+  }
+ }
+ // .breadcrumbs__current
+ &__current {
+  font-size: rem(16);
+  line-height: math.div(20, 16);
+  color: $accentColor;
+ }
+}
+
+
+.pagging {
+ // .pagging__arrow
+ &__arrow {
+  // .pagging__arrow_left
+  &_left {
+  }
+  // .pagging__arrow_right
+  &_right {
+  }
+ }
+ // .pagging__list
+ &__list {
+  display: flex;
+  justify-content: flex-end;
+ }
+ // .pagging__item
+ &__item {
+ }
+ // .pagging__link
+ &__link {
+ }
+}
+

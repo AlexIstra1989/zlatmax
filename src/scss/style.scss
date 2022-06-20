@@ -135,6 +135,22 @@ body {
 @import "header";
 @import "footer";
 @import"products-slider";
+@import "catalog";
+
+.page {
+ &_inner {
+  padding-top: rem(30);
+ }
+ &__header {
+  margin-bottom: rem(30);
+ }
+ &__title {
+  font-weight: 700;
+  font-size: rem(24);
+  line-height: math.div(29, 24);
+  @include adaptiveValue("margin-bottom", 25, 15); 
+ }
+}
 
 // Подключение стилей отдельных страниц
 @import "home";
