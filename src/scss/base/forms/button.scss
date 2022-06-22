@@ -24,4 +24,10 @@
 	&._fw {
 		width: 100%;
 	}
+ &_border {
+  background-color: $primaryColor;
+  color: $accentColor;
+  border: rem(2) solid $accentColor;
+  box-shadow: none;
+ }
 }

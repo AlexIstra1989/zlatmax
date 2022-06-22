@@ -1,4 +1,5 @@
 .catalog {
+ @include adaptiveValue("padding-bottom", 120, 40);
  // .catalog__container
  &__container {
  }
@@ -25,7 +26,19 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(rem(290), rem(350)));
   gap: rem(15);
+  @include adaptiveValue("margin-bottom", 60, 30);
  }
+	// .catalog__footer
+	&__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: rem(20);
+	}
+	// .catalog__more
+	&__more {
+
+	}
+
 }
 
 

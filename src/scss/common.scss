@@ -4,9 +4,6 @@
   display: flex;
   //margin-bottom: rem(30);
  }
- // .breadcrumbs__item
- &__item {
- }
  // .breadcrumbs__link
  &__link {
   font-size: rem(16);
@@ -32,27 +29,56 @@
  }
 }
 
-
 .pagging {
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ gap: rem(30);
  // .pagging__arrow
  &__arrow {
-  // .pagging__arrow_left
-  &_left {
+  svg {
+   path {
+    fill: $accentColor;
+    fill-opacity: 1;
+   }
+  }
+  &:disabled {
+   svg {
+    path {
+     fill: rgba(0, 0, 0, 0.12);
+    }
+   }
   }
   // .pagging__arrow_right
   &_right {
+   svg {
+    transform: rotate(180deg);
+   }
   }
  }
  // .pagging__list
- &__list {
+ &__list { 
   display: flex;
-  justify-content: flex-end;
- }
- // .pagging__item
- &__item {
+  align-items: center;
+  gap: rem(13);
  }
  // .pagging__link
  &__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(34);
+  height: rem(34);
+  border-radius: 50%;
+  line-height: math.div(32, 18);
+  background-color: $primaryColor;
+  &._active {
+   background-color: $accentColor;
+   color: $primaryColor;
+  }
+  &:hover {
+   background-color: $accentColor;
+   color: $primaryColor;
+  }
  }
 }
-

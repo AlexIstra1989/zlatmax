@@ -26,7 +26,21 @@
    <div class="catalog">
     <div class="catalog__container">
      <div class="catalog__body">
-      <div class="catalog__filter"></div>
+      <div class="catalog__filter filter">
+       <h4 class="filter__title">Фильтр товаров</h4>
+       <div class="filter__items" data-spollers>
+        <div class="filter__price price-filter">
+         <button class="price-filter__title" type="button" data-spoller>Цена</button>
+         <div class="price-filter__body">
+          <div class="price-filter__inputs">
+           <input class="price-filter__input" type="text" value="500" data-range-from="0" autocomplete="off" name="form[]">
+           <input class="price-filter__input" type="text" value="1000" data-range-to="'5000" autocomplete="off" name="form[]">
+          </div>
+          <div class="price-filter__range" data-range-item></div>
+         </div>
+        </div>
+       </div>
+      </div>
       <div class="catalog__content">
        <div class="catalog__control">
         <select name="form[]" class="control">
@@ -38,6 +52,7 @@
        </div>
        <div class="catalog__products">
         <article class="product-card">
+         <div class="product-card__sale">-50%</div>
          <a class="product-card__image" href="#">
           <img src="../img/home-page/product-card/product-1.jpg" alt="#">
          </a>
@@ -479,12 +494,23 @@
         </article>
        </div>
        <div class="catalog__footer">
-        <a class="catalog__more button" href="#"></a>
+        <a class="catalog__more button button_border" href="#">Показать больше</a>
         <div class="catalog__pagging pagging">
-         <button class="pagging__arrow pagging__arrow_left" type="button"></button>
+         <button disabled class="pagging__arrow pagging__arrow_left" type="button">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <g clip-path="url(#clip0_60_1943)">
+           <path d="M4.70962 10.9901L13.3093 19.5895C13.8564 20.1368 14.7433 20.1368 15.2901 19.5895C15.8369 19.0427 15.8369 18.1558 15.2901 17.609L7.68067 9.99986L15.2899 2.39095C15.8367 1.84391 15.8367 0.957105 15.2899 0.410283C14.743 -0.136761 13.8561 -0.136761 13.3091 0.410283L4.70939 9.00983C4.43598 9.28337 4.29943 9.6415 4.29943 9.99981C4.29943 10.3583 4.43625 10.7167 4.70962 10.9901Z" fill="black" fill-opacity="0.12"/>
+           </g>
+           <defs>
+           <clipPath id="clip0_60_1943">
+           <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20 0)"/>
+           </clipPath>
+           </defs>
+           </svg>
+         </button>
          <ul class="pagging__list">
           <li class="pagging__item">
-           <a class="pagging__link" href="#">1</a>
+           <a class="pagging__link _active" href="#">1</a>
           </li>
           <li class="pagging__item">
            <a class="pagging__link" href="#">2</a>
@@ -499,7 +525,18 @@
            <a class="pagging__link" href="#">15</a>
           </li>
          </ul>
-         <button class="pagging__arrow pagging__arrow_right" type="button"></button>
+         <button class="pagging__arrow pagging__arrow_right" type="button">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <g clip-path="url(#clip0_60_1943)">
+           <path d="M4.70962 10.9901L13.3093 19.5895C13.8564 20.1368 14.7433 20.1368 15.2901 19.5895C15.8369 19.0427 15.8369 18.1558 15.2901 17.609L7.68067 9.99986L15.2899 2.39095C15.8367 1.84391 15.8367 0.957105 15.2899 0.410283C14.743 -0.136761 13.8561 -0.136761 13.3091 0.410283L4.70939 9.00983C4.43598 9.28337 4.29943 9.6415 4.29943 9.99981C4.29943 10.3583 4.43625 10.7167 4.70962 10.9901Z" fill="black" fill-opacity="0.12"/>
+           </g>
+           <defs>
+           <clipPath id="clip0_60_1943">
+           <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20 0)"/>
+           </clipPath>
+           </defs>
+           </svg>
+         </button>
         </div>
        </div>
       </div>
