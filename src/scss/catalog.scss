@@ -38,6 +38,73 @@
 	&__more {
 
 	}
+.filter {
+ box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+		// .filter__title
+		&__title {
+   background-color: $mainDarkColor;
+   color: $primaryColor;
+   font-weight: 700;
+   font-size: rem(20);
+   line-height: math.div(24, 20);
+   padding: rem(20) rem(30);
+		}
+		// .filter__items
+		&__items {
+		}
+		// .filter__price
+		&__price {
+		}
+}
+.price-filter {
+ padding: rem(30);
+		// .price-filter__title
+		&__title {
+		}
+		// .price-filter__body
+		&__body {
+		}
+		// .price-filter__inputs
+		&__inputs {
+   display: flex;
+   border: 1px solid #cbcbcb;
+   margin-bottom: rem(30);
+   overflow: hidden;
+		}
+		// .price-filter__input
+		&__input {
+   width: 50%;
+   border-left: 1px solid #cbcbcb;
+   font-size: rem(16);
+   line-height: math.div(20, 16);
+   padding: 0 rem(15);
+   text-align: center;
+   height: rem(42);
+		}
+		// .price-filter__range
+		&__range {
+		}
+}
+
+.item-filter {
+ // .item-filter__title
+ &__title {
+  font-weight: 700;
+  font-size: rem(16);
+  line-height: math.div(20, 16);
+  background-color: $mainDarkColor;
+  width: 100%;
+  color: $primaryColor;
+  padding: rem(13) rem(30);
+  display: flex;
+  justify-content: flex-start;
+ }
+ // .item-filter__body
+ &__body {
+  padding: rem(30);
+ }
+}
+
 
 }
 
