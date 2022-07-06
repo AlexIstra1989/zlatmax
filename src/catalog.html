@@ -25,18 +25,20 @@
    </div>
    <div class="catalog">
     <div class="catalog__container">
-     <div class="catalog__body">
+     <div data-spollers="992" class="catalog__body">
       <div class="catalog__filter filter">
-       <h4 class="filter__title">Фильтр товаров</h4>
-       <div class="filter__items" data-spollers>
+       <button data-spoller class="filter__title" type="button">Фильтр товаров</button>
+       <div data-spollers class="filter__items">
         <div class="filter__price price-filter">
-         <button class="price-filter__title" type="button" data-spoller>Цена</button>
-         <div class="price-filter__body" data-range>
+         <button data-spoller class="price-filter__title" type="button">Цена</button>
+         <div data-range class="price-filter__body">
           <div class="price-filter__inputs">
-           <input class="price-filter__input" type="text" value="500" data-range-from="0" autocomplete="off" name="form[]">
-           <input class="price-filter__input" type="text" value="1000" data-range-to="5000" autocomplete="off" name="form[]">
+           <input data-range-from="0" class="price-filter__input" type="text" value="500" autocomplete="off"
+            name="form[]">
+           <input data-range-to="5000" class="price-filter__input" type="text" value="1000" autocomplete="off"
+            name="form[]">
           </div>
-          <div class="price-filter__range" data-range-item></div>
+          <div data-range-item class="price-filter__range"></div>
          </div>
         </div>
         <div class="filter__item item-filter">
@@ -53,12 +55,13 @@
           </div>
           <div class="item-filter__checkbox checkbox">
            <input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_3" class="checkbox__label"><span class="checkbox__text">Булат Умерова
-             <small>(265)</small></span></label>
+           <label for="c_3" class="checkbox__label"><span class="checkbox__text">Булат
+             Умерова<small>(265)</small></span></label>
           </div>
           <div class="item-filter__checkbox checkbox">
            <input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_4" class="checkbox__label"><span class="checkbox__text">ЗЗОСС <small>(170)</small></span></label>
+           <label for="c_4" class="checkbox__label"><span class="checkbox__text">ЗЗОСС
+             <small>(170)</small></span></label>
           </div>
           <div class="item-filter__checkbox checkbox">
            <input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
@@ -66,11 +69,13 @@
           </div>
           <div class="item-filter__checkbox checkbox">
            <input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_6" class="checkbox__label"><span class="checkbox__text">ЗЛАТКО <small>(150)</small></span></label>
+           <label for="c_6" class="checkbox__label"><span class="checkbox__text">ЗЛАТКО
+             <small>(150)</small></span></label>
           </div>
           <div class="item-filter__checkbox checkbox">
            <input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_7" class="checkbox__label"><span class="checkbox__text">ЗлатПрофит <small>(250)</small></span></label>
+           <label for="c_7" class="checkbox__label"><span class="checkbox__text">ЗлатПрофит
+             <small>(250)</small></span></label>
           </div>
           <div class="item-filter__checkbox checkbox">
            <input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
@@ -82,175 +87,241 @@
           </div>
           <div class="item-filter__checkbox checkbox">
            <input id="c_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_10" class="checkbox__label"><span class="checkbox__text">НИКОН <small>(50)</small></span></label>
+           <label for="c_10" class="checkbox__label"><span class="checkbox__text">НИКОН
+             <small>(50)</small></span></label>
           </div>
           <div class="item-filter__checkbox checkbox">
            <input id="c_11" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_11" class="checkbox__label"><span class="checkbox__text">Оружейник <small>(250)</small></span></label>
+           <label for="c_11" class="checkbox__label"><span class="checkbox__text">Оружейник
+             <small>(250)</small></span></label>
           </div>
           <div class="item-filter__checkbox checkbox">
            <input id="c_12" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_12" class="checkbox__label"><span class="checkbox__text">РОСоружие <small>(350)</small></span></label>
+           <label for="c_12" class="checkbox__label"><span class="checkbox__text">РОСоружие
+             <small>(350)</small></span></label>
           </div>
           <div class="item-filter__checkbox checkbox">
            <input id="c_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_13" class="checkbox__label"><span class="checkbox__text">СТИЛЬ-М <small>(35)</small></span></label>
+           <label for="c_13" class="checkbox__label"><span class="checkbox__text">СТИЛЬ-М
+             <small>(35)</small></span></label>
           </div>
-         </div>
          </div>
         </div>
         <div class="filter__item item-filter">
          <button class="item-filter__title" type="button" data-spoller>Сталь</button>
          <div class="item-filter__body">
           <div class="item-filter__checkbox checkbox">
-           <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_1" class="checkbox__label"><span class="checkbox__text">100Х13М <small>(250)</small></span></label>
+           <input id="c_14" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_14" class="checkbox__label"><span class="checkbox__text">100Х13М<small>(250)</small></span></label>
           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_2" class="checkbox__label"><span class="checkbox__text">110Х18М-ШД<small>(25)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_3" class="checkbox__label"><span class="checkbox__text">40Х10С2М (ЭИ-107)<small>(265)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_4" class="checkbox__label"><span class="checkbox__text">50Х14МФ<small>(170)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_6" class="checkbox__label"><span class="checkbox__text">95Х18<small>(170)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_7" class="checkbox__label"><span class="checkbox__text">AUS-8<small>(150)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_8" class="checkbox__label"><span class="checkbox__text">ELMAX<small>(250)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_9" class="checkbox__label"><span class="checkbox__text">RWL-34<small>(150)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_10" class="checkbox__label"><span class="checkbox__text">Дамаск<small>(250)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_11" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_11" class="checkbox__label"><span class="checkbox__text">К340<small>(50)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_12" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_12" class="checkbox__label"><span class="checkbox__text">Литой булат<small>(250)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_13" class="checkbox__label"><span class="checkbox__text">М390<small>(250)</small></span></label>
-           </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_15" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_15" class="checkbox__label"><span
+             class="checkbox__text">110Х18М-ШД<small>(25)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_16" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_16" class="checkbox__label"><span class="checkbox__text">40Х10С2М
+             (ЭИ-107)<small>(265)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_17" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_17" class="checkbox__label"><span
+             class="checkbox__text">50Х14МФ<small>(170)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_18" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_18" class="checkbox__label"><span
+             class="checkbox__text">95Х18<small>(170)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_19" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_19" class="checkbox__label"><span
+             class="checkbox__text">AUS-8<small>(150)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_20" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_20" class="checkbox__label"><span
+             class="checkbox__text">ELMAX<small>(250)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_21" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_21" class="checkbox__label"><span
+             class="checkbox__text">RWL-34<small>(150)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_22" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_22" class="checkbox__label"><span
+             class="checkbox__text">Дамаск<small>(250)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_23" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_23" class="checkbox__label"><span class="checkbox__text">К340<small>(50)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_24" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_24" class="checkbox__label"><span class="checkbox__text">Литой
+             булат<small>(250)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_25" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_25" class="checkbox__label"><span
+             class="checkbox__text">М390<small>(250)</small></span></label>
+          </div>
          </div>
         </div>
         <div class="filter__item item-filter">
          <button class="item-filter__title" type="button" data-spoller>Рукоять</button>
          <div class="item-filter__body">
           <div class="item-filter__checkbox checkbox">
-           <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_1" class="checkbox__label"><span class="checkbox__text">Mercorne<small>(250)</small></span></label>
+           <input id="c_26" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_26" class="checkbox__label"><span
+             class="checkbox__text">Mercorne<small>(250)</small></span></label>
           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_2" class="checkbox__label"><span class="checkbox__text">Березовый кап<small>(25)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_3" class="checkbox__label"><span class="checkbox__text">Бубинго<small>(265)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_4" class="checkbox__label"><span class="checkbox__text">Граб<small>(170)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_5" class="checkbox__label"><span class="checkbox__text">Дуб<small>(170)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_6" class="checkbox__label"><span class="checkbox__text">Кап<small>(150)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_7" class="checkbox__label"><span class="checkbox__text">Комбинированная<small>(250)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_8" class="checkbox__label"><span class="checkbox__text">Каштан<small>(150)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_9" class="checkbox__label"><span class="checkbox__text">Квартопрен<small>(250)</small></span></label>
-           </div>
-           <div class="item-filter__checkbox checkbox">
-            <input id="c_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-            <label for="c_10" class="checkbox__label"><span class="checkbox__text">Кожа-Металл<small>(50)</small></span></label>
-           </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_27" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_27" class="checkbox__label"><span class="checkbox__text">Березовый
+             кап<small>(25)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_28" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_28" class="checkbox__label"><span
+             class="checkbox__text">Бубинго<small>(265)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_29" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_29" class="checkbox__label"><span class="checkbox__text">Граб<small>(170)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_30" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_30" class="checkbox__label"><span class="checkbox__text">Дуб<small>(170)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_31" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_31" class="checkbox__label"><span class="checkbox__text">Кап<small>(150)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_32" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_32" class="checkbox__label"><span
+             class="checkbox__text">Комбинированная<small>(250)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_33" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_33" class="checkbox__label"><span
+             class="checkbox__text">Каштан<small>(150)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_34" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_34" class="checkbox__label"><span
+             class="checkbox__text">Квартопрен<small>(250)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_35" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_35" class="checkbox__label"><span
+             class="checkbox__text">Кожа-Металл<small>(50)</small></span></label>
+          </div>
+         </div>
+        </div>
+        <div class="filter__item item-filter">
+         <button class="item-filter__title" type="button" data-spoller>Гарда и тыльник</button>
+         <div class="item-filter__body">
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_36" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_36" class="checkbox__label"><span
+             class="checkbox__text">Алюминий<small>(250)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_37" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_37" class="checkbox__label"><span
+             class="checkbox__text">Латунь<small>(25)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_38" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_38" class="checkbox__label"><span class="checkbox__text">Литой
+             Барс<small>(265)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_39" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_39" class="checkbox__label"><span class="checkbox__text">Литой
+             Пума<small>(170)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_40" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_40" class="checkbox__label"><span
+             class="checkbox__text">Литье<small>(170)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_41" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_41" class="checkbox__label"><span
+             class="checkbox__text">Металлический<small>(150)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_42" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_42" class="checkbox__label"><span class="checkbox__text">Нержавеющая
+             сталь<small>(250)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_43" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_43" class="checkbox__label"><span
+             class="checkbox__text">Текстолит<small>(150)</small></span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_44" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_44" class="checkbox__label"><span
+             class="checkbox__text">Комбинированная<small>(250)</small></span></label>
+          </div>
+         </div>
+        </div>
+        <div class="filter__item item-filter">
+         <button class="item-filter__title" type="button" data-spoller>Золочение</button>
+         <div class="item-filter__body">
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_45" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_45" class="checkbox__label"><span class="checkbox__text">Золочение клинка</span></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_46" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_46" class="checkbox__label"><span class="checkbox__text">Золочение рисунка на
+             клинке</span></label>
+          </div>
+         </div>
+        </div>
+        <div class="filter__item item-filter">
+         <button class="item-filter__title" type="button" data-spoller>Общая длина, мм</button>
+         <div data-range class="item-filter__body">
+          <div class="item-filter__inputs">
+           <input data-range-from="0" autocomplete="off" value="100" type="text" name="form[]" class="item-filter__input">
+           <input data-range-to="500" autocomplete="off" value="300" type="text" name="form[]" class="item-filter__input">
+          </div>
+          <div data-range-item class="price-filter__range"></div>
+         </div>
+        </div>
+        <div class="filter__item item-filter">
+         <button class="item-filter__title" type="button" data-spoller>Рейтинг</button>
+         <div class="item-filter__body">
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_47" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_47" class="checkbox__label"><img src="img/icons/stars-5.png" alt="#"><small>5/5</small></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_48" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_48" class="checkbox__label"><img src="img/icons/stars-4.png" alt="#"><small>4/5</small></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_49" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_49" class="checkbox__label"><img src="img/icons/stars-3.png" alt="#"><small>3/5</small></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_50" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_50" class="checkbox__label"><img src="img/icons/stars-2.png" alt="#"><small>2/5</small></label>
+          </div>
+          <div class="item-filter__checkbox checkbox">
+           <input id="c_51" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+           <label for="c_51" class="checkbox__label"><img src="img/icons/stars-1.png" alt="#"><small>1/5</small></label>
+          </div>
+         </div>
         </div>
        </div>
-       <div class="filter__item item-filter">
-        <button class="item-filter__title" type="button" data-spoller>Гарда и тыльник</button>
-        <div class="item-filter__body">
-         <div class="item-filter__checkbox checkbox">
-          <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-          <label for="c_1" class="checkbox__label"><span class="checkbox__text">Алюминий<small>(250)</small></span></label>
-         </div>
-          <div class="item-filter__checkbox checkbox">
-           <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_2" class="checkbox__label"><span class="checkbox__text">Латунь<small>(25)</small></span></label>
-          </div>
-          <div class="item-filter__checkbox checkbox">
-           <input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_3" class="checkbox__label"><span class="checkbox__text">Литой Барс<small>(265)</small></span></label>
-          </div>
-          <div class="item-filter__checkbox checkbox">
-           <input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_4" class="checkbox__label"><span class="checkbox__text">Литой Пума<small>(170)</small></span></label>
-          </div>
-          <div class="item-filter__checkbox checkbox">
-           <input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_5" class="checkbox__label"><span class="checkbox__text">Литье<small>(170)</small></span></label>
-          </div>
-          <div class="item-filter__checkbox checkbox">
-           <input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_6" class="checkbox__label"><span class="checkbox__text">Металлический<small>(150)</small></span></label>
-          </div>
-          <div class="item-filter__checkbox checkbox">
-           <input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_7" class="checkbox__label"><span class="checkbox__text">Нержавеющая сталь<small>(250)</small></span></label>
-          </div>
-          <div class="item-filter__checkbox checkbox">
-           <input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_8" class="checkbox__label"><span class="checkbox__text">Текстолит<small>(150)</small></span></label>
-          </div>
-          <div class="item-filter__checkbox checkbox">
-           <input id="c_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_9" class="checkbox__label"><span class="checkbox__text">Комбинированная<small>(250)</small></span></label>
-          </div>
-       </div>
-       <div class="filter__item item-filter">
-        <button class="item-filter__title" type="button" data-spoller>Золочение</button>
-        <div class="item-filter__body">
-         <div class="item-filter__checkbox checkbox">
-          <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-          <label for="c_1" class="checkbox__label"><span class="checkbox__text">Золочение клинка</span></label>
-         </div>
-          <div class="item-filter__checkbox checkbox">
-           <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-           <label for="c_2" class="checkbox__label"><span class="checkbox__text">Золочение рисунка на клинке</span></label>
-          </div> 
-       </div>
-      </div>
-      </div>
       </div>
       <div class="catalog__content">
        <div class="catalog__control">
@@ -293,8 +364,10 @@
            <div class="product-card__price">2 719 р.</div>
            <a class="product-card__compare" href="#">
             <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z" fill="black"/>
-             </svg>
+             <path
+              d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z"
+              fill="black" />
+            </svg>
            </a>
            <a class="product-card__favorite" href="#">
             <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -337,8 +410,10 @@
            <div class="product-card__price">2 719 р.</div>
            <a class="product-card__compare" href="#">
             <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z" fill="black"/>
-             </svg>
+             <path
+              d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z"
+              fill="black" />
+            </svg>
            </a>
            <a class="product-card__favorite" href="#">
             <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -381,8 +456,10 @@
            <div class="product-card__price">2 719 р.</div>
            <a class="product-card__compare" href="#">
             <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z" fill="black"/>
-             </svg>
+             <path
+              d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z"
+              fill="black" />
+            </svg>
            </a>
            <a class="product-card__favorite" href="#">
             <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -425,8 +502,10 @@
            <div class="product-card__price">2 719 р.</div>
            <a class="product-card__compare" href="#">
             <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z" fill="black"/>
-             </svg>
+             <path
+              d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z"
+              fill="black" />
+            </svg>
            </a>
            <a class="product-card__favorite" href="#">
             <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -469,8 +548,10 @@
            <div class="product-card__price">2 719 р.</div>
            <a class="product-card__compare" href="#">
             <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z" fill="black"/>
-             </svg>
+             <path
+              d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z"
+              fill="black" />
+            </svg>
            </a>
            <a class="product-card__favorite" href="#">
             <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -513,8 +594,10 @@
            <div class="product-card__price">2 719 р.</div>
            <a class="product-card__compare" href="#">
             <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z" fill="black"/>
-             </svg>
+             <path
+              d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z"
+              fill="black" />
+            </svg>
            </a>
            <a class="product-card__favorite" href="#">
             <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -557,8 +640,10 @@
            <div class="product-card__price">2 719 р.</div>
            <a class="product-card__compare" href="#">
             <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z" fill="black"/>
-             </svg>
+             <path
+              d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z"
+              fill="black" />
+            </svg>
            </a>
            <a class="product-card__favorite" href="#">
             <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -601,8 +686,10 @@
            <div class="product-card__price">2 719 р.</div>
            <a class="product-card__compare" href="#">
             <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z" fill="black"/>
-             </svg>
+             <path
+              d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z"
+              fill="black" />
+            </svg>
            </a>
            <a class="product-card__favorite" href="#">
             <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -645,8 +732,10 @@
            <div class="product-card__price">2 719 р.</div>
            <a class="product-card__compare" href="#">
             <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z" fill="black"/>
-             </svg>
+             <path
+              d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z"
+              fill="black" />
+            </svg>
            </a>
            <a class="product-card__favorite" href="#">
             <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -689,8 +778,10 @@
            <div class="product-card__price">2 719 р.</div>
            <a class="product-card__compare" href="#">
             <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z" fill="black"/>
-             </svg>
+             <path
+              d="M25.9558 12.5275L25.9337 12.5386L22.2036 3.25484H23.9056C24.2108 3.25484 24.4582 3.00741 24.4582 2.70223C24.4582 2.39706 24.2108 2.14963 23.9056 2.14963H13.5056V0.552604C13.5056 0.247428 13.2582 0 12.953 0C12.6479 0 12.4004 0.247428 12.4004 0.552604V2.1441H2.00595C1.70078 2.1441 1.45335 2.39153 1.45335 2.69671C1.45335 3.00188 1.70078 3.24931 2.00595 3.24931H3.77981L0.0442083 12.5275C0.0165781 12.5922 0.00158874 12.6617 0 12.732C0 15.2697 2.0572 17.3269 4.5949 17.3269C7.13259 17.3269 9.1898 15.2697 9.1898 12.732C9.18821 12.6617 9.17322 12.5922 9.14559 12.5275L5.41552 3.24378H12.4004V20.3303C9.76451 20.5292 7.70329 22.1318 7.70329 24.0714C7.70329 24.3766 7.95072 24.624 8.2559 24.624H17.6502C17.9553 24.624 18.2028 24.3766 18.2028 24.0714C18.2028 22.1318 16.1416 20.5292 13.5056 20.3303V3.24378H20.5624L16.8544 12.5275C16.8268 12.5922 16.8118 12.6617 16.8102 12.732C16.8102 15.2697 18.8674 17.3269 21.4051 17.3269C23.9428 17.3269 26 15.2697 26 12.732C25.9984 12.6617 25.9834 12.5922 25.9558 12.5275ZM4.59214 16.23C2.88058 16.2276 1.42295 14.9852 1.14942 13.2956H8.01275C7.74059 14.977 6.29533 16.2168 4.59214 16.23ZM7.81382 12.1904H1.38151L4.60319 4.17216L7.81382 12.1904ZM16.9981 23.5188H8.90244C9.31137 22.3307 10.9968 21.4134 12.9475 21.4134C14.8982 21.4134 16.5892 22.3307 16.9981 23.5188ZM21.3802 4.17768L24.5909 12.1904H18.1586L21.3802 4.17768ZM21.3802 16.23V16.2355C19.6752 16.2219 18.2294 14.9792 17.9596 13.2956H24.823C24.5494 14.9852 23.0918 16.2276 21.3802 16.23Z"
+              fill="black" />
+            </svg>
            </a>
            <a class="product-card__favorite" href="#">
             <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -710,14 +801,16 @@
          <button disabled class="pagging__arrow pagging__arrow_left" type="button">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
            <g clip-path="url(#clip0_60_1943)">
-           <path d="M4.70962 10.9901L13.3093 19.5895C13.8564 20.1368 14.7433 20.1368 15.2901 19.5895C15.8369 19.0427 15.8369 18.1558 15.2901 17.609L7.68067 9.99986L15.2899 2.39095C15.8367 1.84391 15.8367 0.957105 15.2899 0.410283C14.743 -0.136761 13.8561 -0.136761 13.3091 0.410283L4.70939 9.00983C4.43598 9.28337 4.29943 9.6415 4.29943 9.99981C4.29943 10.3583 4.43625 10.7167 4.70962 10.9901Z" fill="black" fill-opacity="0.12"/>
+            <path
+             d="M4.70962 10.9901L13.3093 19.5895C13.8564 20.1368 14.7433 20.1368 15.2901 19.5895C15.8369 19.0427 15.8369 18.1558 15.2901 17.609L7.68067 9.99986L15.2899 2.39095C15.8367 1.84391 15.8367 0.957105 15.2899 0.410283C14.743 -0.136761 13.8561 -0.136761 13.3091 0.410283L4.70939 9.00983C4.43598 9.28337 4.29943 9.6415 4.29943 9.99981C4.29943 10.3583 4.43625 10.7167 4.70962 10.9901Z"
+             fill="black" fill-opacity="0.12" />
            </g>
            <defs>
-           <clipPath id="clip0_60_1943">
-           <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20 0)"/>
-           </clipPath>
+            <clipPath id="clip0_60_1943">
+             <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20 0)" />
+            </clipPath>
            </defs>
-           </svg>
+          </svg>
          </button>
          <ul class="pagging__list">
           <li class="pagging__item">
@@ -739,14 +832,16 @@
          <button class="pagging__arrow pagging__arrow_right" type="button">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
            <g clip-path="url(#clip0_60_1943)">
-           <path d="M4.70962 10.9901L13.3093 19.5895C13.8564 20.1368 14.7433 20.1368 15.2901 19.5895C15.8369 19.0427 15.8369 18.1558 15.2901 17.609L7.68067 9.99986L15.2899 2.39095C15.8367 1.84391 15.8367 0.957105 15.2899 0.410283C14.743 -0.136761 13.8561 -0.136761 13.3091 0.410283L4.70939 9.00983C4.43598 9.28337 4.29943 9.6415 4.29943 9.99981C4.29943 10.3583 4.43625 10.7167 4.70962 10.9901Z" fill="black" fill-opacity="0.12"/>
+            <path
+             d="M4.70962 10.9901L13.3093 19.5895C13.8564 20.1368 14.7433 20.1368 15.2901 19.5895C15.8369 19.0427 15.8369 18.1558 15.2901 17.609L7.68067 9.99986L15.2899 2.39095C15.8367 1.84391 15.8367 0.957105 15.2899 0.410283C14.743 -0.136761 13.8561 -0.136761 13.3091 0.410283L4.70939 9.00983C4.43598 9.28337 4.29943 9.6415 4.29943 9.99981C4.29943 10.3583 4.43625 10.7167 4.70962 10.9901Z"
+             fill="black" fill-opacity="0.12" />
            </g>
            <defs>
-           <clipPath id="clip0_60_1943">
-           <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20 0)"/>
-           </clipPath>
+            <clipPath id="clip0_60_1943">
+             <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20 0)" />
+            </clipPath>
            </defs>
-           </svg>
+          </svg>
          </button>
         </div>
        </div>

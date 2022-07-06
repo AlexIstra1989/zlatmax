@@ -4,7 +4,7 @@
 .button {
  @include adaptiveValue("font-size", 18, 16);
 	display: inline-block;
-	padding: 0px 0px;
+ width: rem(228);
  font-weight: 600;
  font-size: rem(20);
  line-height: math.div(32, 20);
@@ -16,6 +16,9 @@
  border-radius: 3px;
  cursor: pointer;
  transition: all 0.3 ease 0s;
+ @media (max-width: $mobileSmall) {
+  width: 100%;
+ }
 	@media (any-hover: hover) {
 		&:hover {
    box-shadow: 0px 4px 25px rgba(232, 170, 49, 0.73);
@@ -29,5 +32,12 @@
   color: $accentColor;
   border: rem(2) solid $accentColor;
   box-shadow: none;
+ }
+ &_black {
+  padding: rem(2) rem(37) !important;
+  background-color: $mainDarkColor;
+  color: $primaryColor;
+  line-height: math.div(46, 18);
+  font-weight: 600;
  }
 }

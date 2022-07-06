@@ -6,8 +6,11 @@
  // .catalog__body
  &__body {
   display: grid;
-  grid-template-columns: rem(375) 1fr;
   gap: rem(30);
+  align-items: start;
+  @media (min-width: $tablet) {
+   grid-template-columns: rem(305) 1fr;
+  }
  }
  // .catalog__filter
  &__filter {
@@ -24,7 +27,7 @@
  // .catalog__products
  &__products {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(rem(290), rem(350)));
+  grid-template-columns: repeat(auto-fit, minmax(rem(290), 1fr));
   gap: rem(15);
   @include adaptiveValue("margin-bottom", 60, 30);
  }
@@ -33,6 +36,9 @@
   display: flex;
   justify-content: space-between;
   gap: rem(20);
+  @media (max-width: $tablet) {
+   flex-direction: column;
+  }
 	}
 	// .catalog__more
 	&__more {
@@ -48,6 +54,8 @@
    font-size: rem(20);
    line-height: math.div(24, 20);
    padding: rem(20) rem(30);
+   width: 100%;
+   text-align: left;
 		}
 		// .filter__items
 		&__items {
@@ -60,6 +68,9 @@
  padding: rem(30);
 		// .price-filter__title
 		&__title {
+   &._spoller-active {
+    margin-bottom: rem(10);
+   }
 		}
 		// .price-filter__body
 		&__body {
@@ -68,7 +79,7 @@
 		&__inputs {
    display: flex;
    border: 1px solid #cbcbcb;
-   margin-bottom: rem(30);
+   margin-bottom: rem(60);
    overflow: hidden;
 		}
 		// .price-filter__input
@@ -90,18 +101,35 @@
  // .item-filter__title
  &__title {
   font-weight: 700;
-  font-size: rem(16);
-  line-height: math.div(20, 16);
+  font-size: rem(20);
+  line-height: math.div(20, 20);
   background-color: $mainDarkColor;
   width: 100%;
   color: $primaryColor;
-  padding: rem(13) rem(30);
+  padding: rem(20) rem(30);
   display: flex;
   justify-content: flex-start;
  }
  // .item-filter__body
  &__body {
   padding: rem(30);
+ }
+ // .item-filter__input
+ &__inputs {
+  display: flex;
+  border: 1px solid #cbcbcb;
+  margin-bottom: rem(60);
+  overflow: hidden;
+ }
+ // .item-filter__input
+ &__input {
+  width: 50%;
+  border-left: 1px solid #cbcbcb;
+  font-size: rem(16);
+  line-height: math.div(20, 16);
+  padding: 0 rem(15);
+  text-align: center;
+  height: rem(42);
  }
 }
 
