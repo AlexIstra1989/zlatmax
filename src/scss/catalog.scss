@@ -1,8 +1,5 @@
 .catalog {
  @include adaptiveValue("padding-bottom", 120, 40);
- // .catalog__container
- &__container {
- }
  // .catalog__body
  &__body {
   display: grid;
@@ -11,12 +8,6 @@
   @media (min-width: $tablet) {
    grid-template-columns: rem(305) 1fr;
   }
- }
- // .catalog__filter
- &__filter {
- }
- // .catalog__content
- &__content {
  }
  // .catalog__control
  &__control {
@@ -40,10 +31,6 @@
    flex-direction: column;
   }
 	}
-	// .catalog__more
-	&__more {
-
-	}
 .filter {
  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 		// .filter__title
@@ -57,12 +44,6 @@
    width: 100%;
    text-align: left;
 		}
-		// .filter__items
-		&__items {
-		}
-		// .filter__price
-		&__price {
-		}
 }
 .price-filter {
  padding: rem(30);
@@ -71,9 +52,6 @@
    &._spoller-active {
     margin-bottom: rem(10);
    }
-		}
-		// .price-filter__body
-		&__body {
 		}
 		// .price-filter__inputs
 		&__inputs {
@@ -91,9 +69,6 @@
    padding: 0 rem(15);
    text-align: center;
    height: rem(42);
-		}
-		// .price-filter__range
-		&__range {
 		}
 }
 
@@ -132,9 +107,4 @@
   height: rem(42);
  }
 }
-
-
 }
-
-
-

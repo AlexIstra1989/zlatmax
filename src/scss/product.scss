@@ -1,10 +1,4 @@
 .product {
- // .product__container
- &__container {
- }
- // .product__main
- &__main {
- }
 }
 .main-product {
  display: grid;
@@ -120,19 +114,7 @@
   .select__value {
    width: 100%;
    padding: 0 0 0 rem(20);
-   // gap: 0;
   }
-  // .select__value:after  {
-  //  background-color: #000;
-  //  flex: 1 1 40px;
-  // }
-  // .select__content::after {
-  //  @include background(url("../img/icons//arrow-select.svg"));
-  //  transform: rotate(0deg);
-  //  width: 15px;
-  //  height: 10px;
-  //  right: -26px;
-  // }
  }
 }
 .action-product {
@@ -214,5 +196,174 @@
  &__cart {
   padding: rem(2) rem(62);
   line-height: math.div(46, 18);
+ }
+}
+
+.product-info {
+ @include adaptiveValue("padding-bottom", 120, 40);
+ // .product-info__tabs
+ &__tabs {
+  background-color: #FEFEFE;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  @include adaptiveValue("padding", 30, 10);
+ }
+ // .product-info__navigation
+ &__navigation {
+  display: flex;
+  @include adaptiveValue("gap", 60, 30);
+  padding-bottom: rem(20);
+  margin-bottom: rem(30);
+  border-bottom: 1px solid rgba(20, 20, 20, 0.15);
+  @media (max-width: $mobile) {
+   flex-direction: column;
+  }
+ }
+ // .product-info__title
+ &__title {
+  font-weight: 600;
+  font-size: rem(20);
+  line-height: math.div(24, 20);
+  color: rgba(20, 20, 20, 0.5);
+  &._tab-active {
+			color: $mainDarkColor;
+   position: relative;
+   transition: all 0.5s;
+   &::after {
+    @include pseudo;
+    border-bottom: 2px solid $accentColor;
+    width: 100%; 
+    top: 43px;
+   }
+		}
+ }
+ // .product-info__content
+ &__content {
+ }
+ // .product-info__body
+ &__body {
+  @include adaptiveValue("font-size", 18, 14);
+ }
+ // .product-info__text
+ &__text {
+  max-width: rem(1410);
+  &:not(:last-child) {
+   margin-bottom: rem(30);
+  }
+ }
+ // .product-info__label
+ &__label {
+ }
+ //.product-info__items 
+ &__items {
+  display: grid;
+  gap: rem(30);
+  @media (min-width: $mobile) {
+   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  } 
+ }
+ // .product-info__item
+ &__item {
+  @media (min-width: $mobile) {
+   &:not(:last-child) {
+    border-right: 1px solid rgba(20, 20, 20, 0.15);
+   }
+  }
+ }
+ //.product-info__item-title 
+ &__item-title {
+  font-weight: 700;
+  line-height: math.div(22, 18);
+  margin-bottom: rem(30);
+ }
+ // .product-info__box
+ &__box {
+  display: grid;
+  grid-template-columns: (200px) minmax(100px, 300px);
+  gap: rem(20);
+ }
+ // .product-info__label 
+ &__label {
+ }
+ // .product-info__value
+ &__value {
+ }
+ // .product-info__reviews
+ &__reviews {
+ }
+ // .product-info__review
+ &__review {
+  max-width: rem(910);
+  &:not(:last-child) {
+   border-bottom: 1px solid rgba(20, 20, 20, 0.15);
+   padding-bottom: rem(30);
+   margin-bottom: rem(30);
+  }
+ }
+ // .product-info__user
+ &__user {
+  display: flex;
+  margin-bottom: rem(10);
+ }
+ // .product-info__user-pic
+ &__user-pic {
+  margin-right: rem(30);
+  @include adaptiveValue("margin-right", 30, 5);
+ }
+ // .product-info__user-info
+ &__user-info {
+ }
+ // .product-info__user-name
+ &__user-name {
+  font-weight: 600;
+  line-height: math.div(22, 18);
+  margin-bottom: rem(10);
+ }
+ // .product-info__user-date
+ &__user-date {
+  margin-left: auto;
+ }
+ // .product-info__review-text
+ &__review-text {
+  line-height: math.div(27, 18);
+  margin-bottom: rem(20);
+ }
+ // .product-info__review-bottom
+ &__review-content {
+  max-width: rem(835);
+  margin-left: auto;
+  @include adaptiveValue("padding-left", 30, 0);
+ }
+  // .product-info__review-bottom
+ &__review-bottom {
+  display: flex;
+  justify-content: space-between;
+ }
+ // .product-info__review-reply
+ &__review-reply {
+  font-weight: 600;
+  color: $accentColor;
+ }
+ // .product-info__delivery
+ &__delivery {
+ }
+ // .product-info__delivery-box
+ &__delivery-box {
+  display: grid;
+  align-items: center;
+  column-gap: rem(30);
+  margin-bottom: rem(30);
+  @media (min-width: $mobileSmall) {
+   grid-template-columns: (130px) minmax(100px, 300px);
+  }
+ }
+ // .product-info__delivery-label
+ &__delivery-label {
+  font-weight: 600;
+  @media (max-width: $mobileSmall) {
+   margin-bottom: rem(15);
+  }
+ }
+ .select__value {
+  width: 100%;
  }
 }

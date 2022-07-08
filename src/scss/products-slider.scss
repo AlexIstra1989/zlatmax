@@ -1,7 +1,4 @@
 .products-slider {
- // .products-slider__container
- &__container {
- }
  // .products-slider__header
  &__header {
   display: flex;
@@ -52,9 +49,6 @@
  // .products-slider__swiper
  &__swiper {
   @include adaptiveValue("margin-bottom", 60, 30);
- }
- // .products-slider__slide
- &__slide {
  }
  &__dotts {
   display: grid;

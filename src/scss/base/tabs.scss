@@ -9,7 +9,7 @@
 		padding: rem(10) rem(15);
 		border-radius: rem(5);
 		&._tab-active {
-			border: 1px solid #000;
+			color: $mainDarkColor;
 		}
 	}
 	// .tabs__content

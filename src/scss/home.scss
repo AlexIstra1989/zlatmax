@@ -1,8 +1,3 @@
-.page {
- // .page__main-block
- &__main-block {
- }
-}
 .main-block {
  @include background(url("../img/home-page/main-block/main-bg.jpg"));
  color: $primaryColor;
@@ -30,12 +25,6 @@
  // .main-block__swiper
  &__swiper {
   margin-bottom: rem(30);
- }
- // .main-block__slide
- &__slide {
- }
- // .main-block__advantages
- &__advantages {
  }
 }
 
@@ -78,9 +67,6 @@
   @media (max-width: $mobileSmall) {
    width: 100%;
   }
- }
- // .slide__media
- &__media {
  }
 }
 
@@ -161,13 +147,9 @@
  position: relative;
  // .media__image
  &__image {
-  // width: rem(450);
-  // height: rem(500);
   position: relative;
   &::before {
    @include pseudo;
-   // width: 423px;
-   // height: 423px;
    width: percent(423, 449);
    padding-bottom: percent(423, 449);
    border: 2px solid rgba(255, 255, 255, 0.5);
@@ -269,10 +251,6 @@
   width: 100%;
   height: 160px;
  }
- // .advantages__icon
- &__icon {
-
- }
  // .advantages__text
  &__text {
   margin-top: auto;
@@ -311,10 +289,6 @@
   @include adaptiveValue("padding", 30, 20);
   z-index: 2;
   position: relative;
- }
- // .catalog-cards__title
- &__title {
-
  }
  // .catalog-cards__title-link
  &__title-link {
@@ -456,18 +430,11 @@
  &__content {
   min-width: 0;
  }
- // .new-products__slider
- &__slider {
- 
- }
  // .new-products__wrapper
  &__wrapper {
   @include adaptiveValue("margin-bottom", 50, 20);
   text-align: center;
   display: block;
- }
- // .new-products__slide
- &__slide {
  }
  &__dotts {
   display: grid;
@@ -601,7 +568,6 @@
   min-height: rem(293);
   overflow: hidden; 
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-  //max-width: rem(510);
   min-height: rem(290);
   position: relative;
   transition: box-shadow 0.5s;
@@ -623,9 +589,6 @@
   @include adaptiveValue("padding", 30, 20);
   z-index: 2;
   position: relative;
- }
- // .product-block__title
- &__title {
  }
  // .product-block__title-link
  &__title-link {
@@ -672,8 +635,7 @@
    text-align: center;
   }
   img {
-   //width: 100%;
-   max-height: rem(293);
+    max-height: rem(293);
   }
  }
 }

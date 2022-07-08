@@ -148,9 +148,6 @@
     span {
      width: 0;
     }
-    &::before,
-    &::after {
-    }
     &::before {
      top: calc(50% - rem(1));
      transform: rotate(-45deg);
@@ -181,9 +178,6 @@
    justify-content: center;
   }
  }
- &__logo {
-
-	}
  &__search {
   @include adaptiveValue("padding-left", 158, 20, 1620, 1200, 1);
   flex: 1 1 auto;
@@ -250,9 +244,6 @@
    left: 0;
    top: -5px;
   }
- }
- // .actions-header__phones
- &__phones {
  }
  // .actions-header__favorite
  &__favorite {
@@ -446,9 +437,6 @@
    flex-direction: column;
   }
  }
- // .menu-catalog__item
- &__item {
- }
  // .menu-catalog__link
  &__link {
   display: flex;
@@ -525,7 +513,6 @@
    display: block;
   }   
  }
- //position: absolute;
  width: 100%;
  left: 0;
  top: 100%;
@@ -618,10 +605,6 @@
   }
   @media (max-width: $tablet) {
    display: inline-flex;
-  
   }
  }
 }
-
-
-
